@@ -1,0 +1,8 @@
+(function() {
+    'use strict';
+    const currentUrl = window.location.href;
+    const newUrl = currentUrl.replace('www.reddit.com', 'old.reddit.com');
+    if (newUrl !== currentUrl) {
+        window.location.replace(newUrl);
+    }
+})();
